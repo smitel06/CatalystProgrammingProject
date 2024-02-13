@@ -21,7 +21,7 @@ public class AIState : MonoBehaviour
         {
             if(condition.Condition())
             {
-                _stateMachine.SwitchState(condition._transition);
+                _stateMachine.SwitchState(condition._nextState);
                 return;
             }
         }
